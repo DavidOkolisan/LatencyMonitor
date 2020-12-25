@@ -14,4 +14,6 @@ echo "Setup log4j properties..."
 cp ./src/main/resources/log4j.properties ~/LatencyMonitor/
 echo "Deploy LatencyMonitor..."
 cp ./target/LatencyMonitor.jar ~/LatencyMonitor/
+echo "Setup execute script..."
+cp ./src/main/resources/execute.sh ~/LatencyMonitor/
 echo "Deploy complete..."
