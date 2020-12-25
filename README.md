@@ -1,5 +1,8 @@
 # Latency monitor
 
+### Graph
+
+![Graph](https://user-images.githubusercontent.com/26084050/103128698-a14aba80-4696-11eb-9ab9-e15c5e685fbc.jpg)
 
 Latency monitor calculate various paremeters based on directional graph structure place in input file (input.txt). Input file is comma separeted file,
 where each element represent two services and weights between them, in terms of latency (i.e. AB5 represents latency between A and B,
@@ -23,9 +26,17 @@ In current setup app calculates:
 
 AB5,BC4,CD8,DC8,DE6,AD5,CE2,EB3,AE7
 
-### Graph
-
-![Graph](https://user-images.githubusercontent.com/26084050/103128698-a14aba80-4696-11eb-9ab9-e15c5e685fbc.jpg)
+### Expected output
+1. 9
+2. 5
+3. 13
+4. 22
+5. NO SUCH TRACE
+6. 2
+7. 3
+8. 9
+9. 9
+10. 7
 
 ### Running app
 
