@@ -135,7 +135,7 @@ public class GraphWeighted {
                 int localWeight = getWeight(getNode(list.get(i).toString()), getNode(list.get(i + 1).toString()));
                 // Handle case of non existing connection
                 if(localWeight == 0) {
-                    logger.error("NO SUCH TRACE: " + list.get(i).toString() + "-" + list.get(i + 1).toString());
+                    logger.warn("NO SUCH TRACE: " + list.get(i).toString() + "-" + list.get(i + 1).toString());
                     return 0;
                 }
                 w = w + getWeight(getNode(list.get(i).toString()), getNode(list.get(i + 1).toString()));
@@ -170,7 +170,7 @@ public class GraphWeighted {
         if(isEdge(a)) {
             return getAllPaths(a,a,selection,i);
         }
-        logger.error("NO SUCH TRACE: " + a.getName() + "-" + a.getName());
+        logger.warn("NO SUCH TRACE: " + a.getName() + "-" + a.getName());
         return new HashMap<>();
     }
 
@@ -207,7 +207,7 @@ public class GraphWeighted {
 
         //if no paths found throw message
         if(paths.size()==0){
-            System.out.println("NO SUCH TRACE: " + start.getName() + "-" + end.getName());
+            logger.warn("NO SUCH TRACE: " + start.getName() + "-" + end.getName());
         }
 
         return paths;
@@ -437,7 +437,7 @@ public class GraphWeighted {
         if(isEdge(node)) {
             return getShortestPathBetweenSameNodes(node, 30);
         }
-        logger.info("NO SUCH TRACE: " + node.getName() + "-" + node.getName());
+        logger.warn("NO SUCH TRACE: " + node.getName() + "-" + node.getName());
         return null;
     }
 
