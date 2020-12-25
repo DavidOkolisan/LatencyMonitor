@@ -30,11 +30,11 @@ AB5,BC4,CD8,DC8,DE6,AD5,CE2,EB3,AE7
 ### Running app
 
 For simplicity sake two tiny scripts are created in order to build project and deploy it on your system.
-Scripts could be found under /src/main/resources
+Scripts could be found under `/src/main/resources`
 For building project use following script, it will create new directory(LatencyMonitor) under current user home directory and setup dependencies:
-/bin/bash build.sh
+`/bin/bash build.sh`
 For executing jar created by build script you can run:
-/bin/bash execute.sh
+`/bin/bash execute.sh`
 
 ### Results and logs
 By using execute.sh script you ensure that logs and results are placed in same directory as jar file. So in this case logs and results will be placed under `~/LatencyMonitor/`. If you decide to call jar manually then results and logs will be placed in directory from where you invoke jar.
