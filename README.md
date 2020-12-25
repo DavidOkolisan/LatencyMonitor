@@ -19,6 +19,11 @@ In current setup app calculates:
 10. The number of different traces from C to C with an average latency of less than 30. In the same data, the traces are C-D-C, C-E-B-C, C-E-B-C-D-C, C-D-C-E-B-C, C-D-E-B-C, C-E-B-C-E-B-C, C-E-B-C-E-B-C-E-B-C.
 
 
-Input.txt
+### Input.txt
+
 AB5,BC4,CD8,DC8,DE6,AD5,CE2,EB3,AE7
+
+### Graph
+
+![Graph](https://user-images.githubusercontent.com/26084050/103128698-a14aba80-4696-11eb-9ab9-e15c5e685fbc.jpg)
 
