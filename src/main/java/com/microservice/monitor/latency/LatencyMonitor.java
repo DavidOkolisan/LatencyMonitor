@@ -55,11 +55,11 @@ public class LatencyMonitor {
         int traceCCByLatency = graphWeighted.getNumberOfTracesBySelection(nodes.get(NodeEnum.C.name()), Selection.MAX_LATENCY, 30);
 
         logger.info("Write results to file.....");
-        String file = "./tmp/results.txt";
+        String file = "./results/results.txt";
         if(new File(file).delete()) {
             logger.info("Delete previous results file");
         }
-        FileWriter fileWriter = new FileWriter("./tmp/results.txt" );
+        FileWriter fileWriter = new FileWriter(file);
         PrintWriter printWriter = new PrintWriter(fileWriter);
         printWriter.println("1. " + (ABC != 0.0 ? ABC : "NO SUCH TRACE"));
         printWriter.println("2. " + (AD != 0.0 ? AD : "NO SUCH TRACE"));

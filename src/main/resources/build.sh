@@ -6,7 +6,7 @@ mvn clean install > /dev/null
 echo "Build complete..."
 
 echo "Deploy jar with dependencies..."
-mkdir -p ~/LatencyMonitor
+mkdir -p ~/LatencyMonitor/results
 cp -R ./target/lib  ~/LatencyMonitor/ > /dev/null
 echo "Setup input.txt..."
 cp ./src/main/resources/input.txt ~/LatencyMonitor/
